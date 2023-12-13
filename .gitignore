@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+#ignore cmake folder
+/cmake-build-debug/
+
+#ignore ide stuff from jetbrains
+/.idea/
