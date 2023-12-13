@@ -1,4 +1,0 @@
-C:\Users\dawin\AppData\Local\JetBrains\Toolbox\apps\CLion-Nova\ch-0\233.12287\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/dawin/AppData/Local/JetBrains/Toolbox/apps/CLion-Nova/ch-0/233.12287/bin/ninja/win/x64/ninja.exe -G Ninja -S "C:\Users\dawin\Desktop\Ma Shit\Projects\Physics Engine" -B "C:\Users\dawin\Desktop\Ma Shit\Projects\Physics Engine\cmake-build-debug"
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/dawin/Desktop/Ma Shit/Projects/Physics Engine/cmake-build-debug

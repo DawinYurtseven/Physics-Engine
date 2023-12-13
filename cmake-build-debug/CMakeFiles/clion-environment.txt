@@ -1,4 +1,0 @@
-ToolSet: 11.0 w64 (local)@C:\Users\dawin\AppData\Local\JetBrains\Toolbox\apps\CLion-Nova\ch-0\233.12287\bin\mingw
-Options: 
-
-Options:-DCMAKE_MAKE_PROGRAM=C:/Users/dawin/AppData/Local/JetBrains/Toolbox/apps/CLion-Nova/ch-0/233.12287/bin/ninja/win/x64/ninja.exe
