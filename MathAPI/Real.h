@@ -1,6 +1,7 @@
 #ifndef REAL_H
 #define REAL_H
 
+#include <cassert>
 #include <concepts>
 #include <format>
 #include <iostream>
@@ -81,7 +82,7 @@ public:
     }
 
     template<arithmetic T>
-    Real& operator =(T number) {
+    Real& operator =(T&& number) {
         value = static_cast<RealNumber>(number);
         return *this;
     }
@@ -267,6 +268,30 @@ public:
      * This should be enough for now. if I find anything that needs to be implemented, I will do so after finding the
      * need and reason for it as well as document it properly
      */
+
+    [[nodiscard]] Real sqre() const {
+        return Real(value*value);
+    }
+
+    [[nodiscard]] Real sqrt() const {
+        assert(value >= 0);
+        if(value == 0.0) return Real(0);
+        RealNumber hi = value;
+        RealNumber lo = 0;
+        RealNumber guess = hi/2;
+        while(abs(guess * guess - value)/guess > 0.0000000001) {
+            if (guess*guess > value){
+                hi = guess;
+            }
+
+            else {
+                lo = guess;
+            }
+
+            guess = (hi + lo)/2;
+        }
+        return Real(guess);
+    }
 
 private:
     RealNumber value{};
